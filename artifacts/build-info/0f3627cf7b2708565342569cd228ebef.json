@@ -1,0 +1,218 @@
+{
+  "id": "0f3627cf7b2708565342569cd228ebef",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.12",
+  "solcLongVersion": "0.6.12+commit.27d51765",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/interfaces/IShare.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\ninterface IShare {\n    function unclaimedTreasuryFund() external view returns (uint256 _pending);\n\n    function claimRewards() external;\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/interfaces/IShare.sol": {
+        "IShare": {
+          "abi": [
+            {
+              "inputs": [],
+              "name": "claimRewards",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [],
+              "name": "unclaimedTreasuryFund",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "_pending",
+                  "type": "uint256"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "deployedBytecode": {
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "",
+              "opcodes": "",
+              "sourceMap": ""
+            },
+            "methodIdentifiers": {
+              "claimRewards()": "372500ab",
+              "unclaimedTreasuryFund()": "17764782"
+            }
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"claimRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unclaimedTreasuryFund\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_pending\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/interfaces/IShare.sol\":\"IShare\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/interfaces/IShare.sol\":{\"keccak256\":\"0x9c93b3507399529bbc0bb31aaea6b2bebb131a42b025b73db0f1f7eaac17adbf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3d0c04a10b6476d52dca61101a50ad8c2d3143996b77a339a791f1c8c880f474\",\"dweb:/ipfs/QmXUeSX6ZjMqPWbRxQ7JfpDqDNx2KxQGQL9DnFSksLm4Mq\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/interfaces/IShare.sol": {
+        "ast": {
+          "absolutePath": "contracts/interfaces/IShare.sol",
+          "exportedSymbols": {
+            "IShare": [
+              10
+            ]
+          },
+          "id": 11,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "0.6",
+                ".12"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "33:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "interface",
+              "documentation": null,
+              "fullyImplemented": false,
+              "id": 10,
+              "linearizedBaseContracts": [
+                10
+              ],
+              "name": "IShare",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "body": null,
+                  "documentation": null,
+                  "functionSelector": "17764782",
+                  "id": 6,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "unclaimedTreasuryFund",
+                  "nodeType": "FunctionDefinition",
+                  "overrides": null,
+                  "parameters": {
+                    "id": 2,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "111:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 5,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 4,
+                        "mutability": "mutable",
+                        "name": "_pending",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 6,
+                        "src": "137:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 3,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "137:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "136:18:0"
+                  },
+                  "scope": 10,
+                  "src": "81:74:0",
+                  "stateMutability": "view",
+                  "virtual": false,
+                  "visibility": "external"
+                },
+                {
+                  "body": null,
+                  "documentation": null,
+                  "functionSelector": "372500ab",
+                  "id": 9,
+                  "implemented": false,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "claimRewards",
+                  "nodeType": "FunctionDefinition",
+                  "overrides": null,
+                  "parameters": {
+                    "id": 7,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "182:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 8,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "193:0:0"
+                  },
+                  "scope": 10,
+                  "src": "161:33:0",
+                  "stateMutability": "nonpayable",
+                  "virtual": false,
+                  "visibility": "external"
+                }
+              ],
+              "scope": 11,
+              "src": "58:138:0"
+            }
+          ],
+          "src": "33:164:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
